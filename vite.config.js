@@ -28,11 +28,6 @@ export default defineConfig({
     },
     sourcemap: process.env.NODE_ENV === 'development',
     minify: 'terser',
-    terserOptions: {
-      compress: {
-        drop_console: process.env.NODE_ENV === 'production',
-      },
-    },
   },
   optimizeDeps: {
     include: ['react', 'react-dom', 'lucide-react'],
