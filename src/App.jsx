@@ -31,21 +31,28 @@ function AppContent() {
 
         if (res.ok) {
           const userData = await res.json();
+          console.log('[APP] Session valid, user:', userData?.username);
           dispatch({ type: ACTIONS.SET_USER_DATA, payload: userData });
+          console.log('[APP] Dispatched SET_USER_DATA');
+        } else {
+          console.log('[APP] Session check failed:', res.status);
         }
       } catch (err) {
-        console.warn('Session check failed');
+        console.warn('[APP] Session check error:', err);
       }
     };
 
     checkSession();
   }, [dispatch]);
 
+  console.log('[APP RENDER] isAuthenticated:', state.isAuthenticated);
+
   // Render based on authentication state
   if (!state.isAuthenticated) {
     return <LoginScreen />;
   }
 
+  console.log('[APP] Rendering Dashboard');
   return <DashboardScreen />;
 }
 
