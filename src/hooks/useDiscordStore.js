@@ -4,7 +4,7 @@
  * Replaces prop drilling with centralized state
  */
 
-import { createContext, useContext, useReducer } from 'react';
+import { createContext, useContext, useReducer, useMemo } from 'react';
 
 // Create context
 const DiscordContext = createContext();
@@ -110,8 +110,11 @@ function discordReducer(state, action) {
 export function DiscordProvider({ children }) {
   const [state, dispatch] = useReducer(discordReducer, initialState);
 
+  // Memoize context value to prevent unnecessary re-renders
+  const value = useMemo(() => ({ state, dispatch }), [state, dispatch]);
+
   return (
-    <DiscordContext.Provider value={{ state, dispatch }}>
+    <DiscordContext.Provider value={value}>
       {children}
     </DiscordContext.Provider>
   );
