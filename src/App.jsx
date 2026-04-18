@@ -31,20 +31,15 @@ function AppContent() {
 
         if (res.ok) {
           const userData = await res.json();
-          console.log('[APP DEBUG] Session check OK, userData:', userData);
           dispatch({ type: ACTIONS.SET_USER_DATA, payload: userData });
-        } else {
-          console.log('[APP DEBUG] Session check failed with status:', res.status);
         }
       } catch (err) {
-        console.warn('[APP DEBUG] Session check error:', err);
+        console.warn('Session check failed');
       }
     };
 
     checkSession();
   }, [dispatch]);
-
-  console.log('[APP DEBUG] Current state.isAuthenticated:', state.isAuthenticated);
 
   // Render based on authentication state
   if (!state.isAuthenticated) {

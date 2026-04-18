@@ -34,20 +34,15 @@ export default function LoginScreen() {
       });
 
       const data = await response.json();
-      console.log('[LOGIN DEBUG] Response status:', response.status);
-      console.log('[LOGIN DEBUG] Response data:', data);
 
       if (!response.ok) {
         throw new Error(data.error || 'Token inválido');
       }
 
-      console.log('[LOGIN DEBUG] About to dispatch SET_USER_DATA with:', data.user);
       // Update global state - SET_USER_DATA also sets isAuthenticated=true
       dispatch({ type: ACTIONS.SET_USER_DATA, payload: data.user });
-      console.log('[LOGIN DEBUG] Dispatch complete, state should update');
       // Token is now in secure httpOnly cookie, not stored in frontend state
     } catch (err) {
-      console.error('[LOGIN ERROR]:', err.message);
       setError(err.message);
     } finally {
       setLoading(false);
