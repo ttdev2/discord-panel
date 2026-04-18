@@ -1,0 +1,12 @@
+run = "npm run dev"
+entrypoint = "server.js"
+
+[nix]
+channel = "stable-23_05"
+
+[unitTest]
+language = "nodejs"
+
+[deployment]
+run = ["npm", "run", "build"]
+build = ["npm", "install"]
