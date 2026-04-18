@@ -7,7 +7,7 @@ STATUS: ✅ ONLINE E FUNCIONANDO
 LOCALIZACAO
 -----------
 GitHub: https://github.com/ttdev2/discord-panel
-Replit: https://discord-panel-1-vicsimiorp.replit.app ✅ ONLINE!
+Replit: https://discord-panel-1--vicsimiorp.replit.app ✅ ONLINE!
 
 ---
 
@@ -231,7 +231,7 @@ Seu Repositorio:
 https://github.com/ttdev2/discord-panel
 
 Seu App Online (ATIVO):
-https://discord-panel-1-vicsimiorp.replit.app
+https://discord-panel-1--vicsimiorp.replit.app
 
 Discord Developers:
 https://discord.com/developers/applications
