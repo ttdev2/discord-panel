@@ -93,9 +93,20 @@ async function discordRequest(url, token, params = {}) {
       return res.data;
     } catch (err) {
       const status = err.response?.status;
+      const data = err.response?.data;
+
+      // Log unexpected errors
+      if (![401, 403, 429].includes(status)) {
+        console.error('[DISCORD API ERROR]', {
+          endpoint: url,
+          status,
+          statusText: err.response?.statusText,
+          data
+        });
+      }
 
       if (status === 429) {
-        const retryAfter = (err.response.data?.retry_after || 1) * 1000;
+        const retryAfter = (data?.retry_after || 1) * 1000;
         logger.warn('Discord API rate limited', { endpoint: url });
         await sleep(retryAfter + 200);
         retries++;
@@ -157,7 +168,14 @@ app.post('/api/auth/login', async (req, res) => {
       },
     });
   } catch (err) {
-    logger.error('Login error', { message: err.message });
+    // Log the full error for debugging
+    console.error('[LOGIN ERROR DETAILS]', {
+      message: err.message,
+      status: err.status,
+      response: err.response?.status,
+      data: err.response?.data
+    });
+    logger.error('Login error', { message: err.message, status: err.status });
     const status = err.status || 500;
     res.status(status).json({ error: 'Token inválido ou expirado' });
   }
