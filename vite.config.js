@@ -16,18 +16,8 @@ export default defineConfig({
     strictPort: false,
   },
   build: {
-    // Code splitting for better performance
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          'vendor': ['react', 'react-dom'],
-          'lucide': ['lucide-react'],
-          'query': ['@tanstack/react-query'],
-        },
-      },
-    },
-    sourcemap: process.env.NODE_ENV === 'development',
-    minify: 'terser',
+    sourcemap: false,
+    minify: false,
   },
   optimizeDeps: {
     include: ['react', 'react-dom', 'lucide-react'],
