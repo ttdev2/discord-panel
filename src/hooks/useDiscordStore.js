@@ -70,7 +70,12 @@ function discordReducer(state, action) {
     case ACTIONS.SET_SESSION_ID:
       return { ...state, sessionId: action.payload };
     case ACTIONS.SET_USER_DATA:
-      return { ...state, userData: action.payload, userId: action.payload?.id };
+      return { 
+        ...state, 
+        userData: action.payload, 
+        userId: action.payload?.id,
+        isAuthenticated: !!action.payload 
+      };
     case ACTIONS.CLEAR_AUTH:
       return {
         ...initialState,

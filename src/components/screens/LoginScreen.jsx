@@ -39,8 +39,7 @@ export default function LoginScreen() {
         throw new Error(data.error || 'Token inválido');
       }
 
-      // Update global state - SET_TOKEN triggers isAuthenticated=true
-      dispatch({ type: ACTIONS.SET_TOKEN, payload: 'authenticated' });
+      // Update global state - SET_USER_DATA also sets isAuthenticated=true
       dispatch({ type: ACTIONS.SET_USER_DATA, payload: data.user });
       // Token is now in secure httpOnly cookie, not stored in frontend state
     } catch (err) {
