@@ -45,14 +45,21 @@ function AppContent() {
     checkSession();
   }, [dispatch]);
 
-  console.log('[APP RENDER] isAuthenticated:', state.isAuthenticated);
+  // DEBUG: Log state on every render
+  console.log('[APP RENDER]', {
+    isAuth: state.isAuthenticated,
+    userData: state.userData?.username,
+    sessionId: state.sessionId,
+    token: state.token ? 'SET' : 'NOT SET'
+  });
 
   // Render based on authentication state
   if (!state.isAuthenticated) {
+    console.log('[APP] NOT AUTHENTICATED - Showing LoginScreen');
     return <LoginScreen />;
   }
 
-  console.log('[APP] Rendering Dashboard');
+  console.log('[APP] AUTHENTICATED - Rendering Dashboard');
   return <DashboardScreen />;
 }
 

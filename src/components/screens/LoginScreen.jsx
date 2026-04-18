@@ -26,6 +26,7 @@ export default function LoginScreen() {
     setError('');
 
     try {
+      console.log('[LOGIN] Sending login request...');
       const response = await fetch('/api/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -34,15 +35,20 @@ export default function LoginScreen() {
       });
 
       const data = await response.json();
+      console.log('[LOGIN] Response status:', response.status, 'OK:', response.ok);
+      console.log('[LOGIN] Response data:', data);
 
       if (!response.ok) {
         throw new Error(data.error || 'Token inválido');
       }
 
       // Update global state - SET_USER_DATA also sets isAuthenticated=true
+      console.log('[LOGIN] Dispatching SET_USER_DATA with payload:', data.user);
       dispatch({ type: ACTIONS.SET_USER_DATA, payload: data.user });
+      console.log('[LOGIN] Dispatch completed');
       // Token is now in secure httpOnly cookie, not stored in frontend state
     } catch (err) {
+      console.error('[LOGIN] Error:', err.message);
       setError(err.message);
     } finally {
       setLoading(false);
