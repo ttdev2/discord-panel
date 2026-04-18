@@ -6,14 +6,8 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: process.env.VITE_PORT || 5173,
-    proxy: {
-      '/api': {
-        target: process.env.VITE_API_URL || 'http://localhost:80',
-        changeOrigin: true,
-        secure: false,
-      },
-    },
     strictPort: false,
+    // Remove proxy for Replit - frontend and backend run on same domain
   },
   build: {
     sourcemap: false,
