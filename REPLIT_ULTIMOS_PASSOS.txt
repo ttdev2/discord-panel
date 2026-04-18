@@ -1,0 +1,107 @@
+REPLIT - ULTIMOS PASSOS PARA COLOCAR ONLINE
+============================================
+
+SEU CODIGO JA ESTA NO GITHUB!
+Repositorio: https://github.com/ttdev2/discord-panel
+
+AGORA: IMPORTAR E COLOCAR ONLINE NO REPLIT
+===========================================
+
+PASSO 1: ATUALIZAR REPLIT
+=========================
+1. Se Replit esta aberto: Pressione F5 (refresh)
+2. Aguarde 3-5 segundos para carregar
+3. Pode fechar e abrir novamente se nao atualizar
+
+PASSO 2: PROCURE POR UMA DESSAS OPCOES
+
+OPCAO A - "Ready to import":
+- Aparece um botao azul escrito "Import"
+- Click nele
+- Vai comeccar a compilar automaticamente
+
+OPCAO B - "Connect repository":
+- Click no botao
+- Selecione: GitHub
+- Autorize Replit acessar GitHub
+- Selecione: ttdev2/discord-panel
+- Click em "Import"
+
+OPCAO C - Ja carregando:
+- Se ja comecou a compilar, aguarde
+- Nao precisa fazer nada
+
+PASSO 3: AGUARDAR COMPILACAO
+=============================
+Uma vez que comecou a importar/compilar:
+
+Tempo estimado: 2-5 MINUTOS
+
+Vai ver:
+- Logs/mensagens aparecendo (normal!)
+- "installing dependencies..."
+- "building..."
+- "starting server..."
+
+PROCURE POR: "Ready on port 3000" ou similar
+
+PASSO 4: SEU APP ESTA ONLINE!
+=============================
+Quando terminar, vai aparecer:
+
+OPCAO 1: Um botao "Open in new tab"
+- Click nele
+- Vai abrir seu app em aba nova
+- URL sera: https://seu-nome.repl.co
+
+OPCAO 2: Procure o link na lateral direita
+- Pode estar em "Preview" ou "Tools"
+- Click para abrir
+
+PASSO 5: TESTAR SEU APP
+=======================
+Quando abrir, vai ver:
+
+- TELA DE LOGIN (branca/preta com token input)
+- Se viu isso = FUNCIONANDO! ✅
+
+Pode logar com seu token Discord e testar!
+
+DICAS
+=====
+
+Se nao compilar:
+- Vai aparecer erro em vermelho
+- Manda para mim a mensagem de erro
+- Geralmente eh arquivo faltando ou variavel nao definida
+
+Se ficar carregando muito:
+- Replit free eh mais lento (pode levar ate 5 min)
+- Aguarde mais um pouco
+- Se passar de 10 min, me chama
+
+Se nao vir "Ready on port":
+- Refresh no Replit (F5)
+- Tente importar novamente
+
+URLS IMPORTANTES
+================
+
+Seu Repositorio GitHub:
+https://github.com/ttdev2/discord-panel
+
+Seu app online sera em:
+https://[seu-replit-name].repl.co
+
+(Replit gera um nome aleatorio tipo: blue-panda-123.repl.co)
+
+PRONTO!
+=======
+
+Seu Discord Panel estara:
+✅ No GitHub (https://github.com/ttdev2/discord-panel)
+✅ Compilado no Replit
+✅ Online e acessivel 24/7
+✅ Gratis!
+
+Qualquer duvida ou erro, me avisa!

@@ -1,0 +1,97 @@
+GUIA COMPLETO - TOKEN GITHUB + PUSH
+===================================
+
+PASSO 1: GERAR TOKEN NO GITHUB
+==============================
+
+1. Abra no navegador: https://github.com/settings/tokens
+2. Click em "Generate new token" > "Generate new token (classic)"
+3. Preencha:
+   - Note: Discord Panel Push
+   - Expiration: 30 days
+   - Selecione permissoes: MARQUE APENAS "repo" (todo o bloco)
+4. Scroll para baixo e click "Generate token"
+5. COPIE O TOKEN que aparecera (parece: ghp_xxxxxxxxxxxxxxxxxxxxxxxxx)
+   - IMPORTANTE: Copie imediatamente! Nao vai conseguir ver novamente!
+
+PASSO 2: PREPARAR A URL COM TOKEN
+==================================
+
+Formato correto:
+https://seu-usuario:seu-token@github.com/seu-usuario/discord-panel.git
+
+Exemplo com valores reais:
+https://joao:ghp_abc123xyz789@github.com/joao/discord-panel.git
+
+Substitua:
+- joao (primeira vez) = seu usuario GitHub
+- ghp_abc123xyz789 = o TOKEN que voce copiou
+- joao (segunda vez) = seu usuario GitHub novamente
+
+PASSO 3: EXECUTAR O PUSH
+========================
+
+1. Abra PowerShell no diretorio do projeto
+2. Execute: .\push-github.ps1
+3. Quando pedir "URL", cole a URL com token (do passo 2)
+4. Aguarde 1-5 minutos (pode ser lento com node_modules)
+
+PASSO 4: VERIFICAR NO GITHUB
+============================
+
+1. Abra https://github.com/seu-usuario/discord-panel
+2. Atualize a pagina (F5)
+3. Deve aparecer os arquivos do projeto (src/, server.js, package.json, etc)
+
+PASSO 5: IMPORTAR NO REPLIT
+===========================
+
+1. Volte ao Replit (se ja estava aberto)
+2. Atualize a pagina (F5)
+3. Deve aparecer "Ready to import" ou similar
+4. Click em "Import" ou "Connect"
+5. Aguarde 2-3 minutos para compilar
+
+DICAS DE SEGURANCA
+==================
+
+- Token e senha sao sigilosos
+- Nao compartilhe a URL com token
+- Se vazar, delete o token em: https://github.com/settings/tokens
+- Pode criar novo token quando quiser
+
+SE DER ERRO
+===========
+
+"Authentication failed":
+- Verifique se copiou o token completamente
+- Verifique se a URL esta correta
+- Tente gerar novo token
+
+"Repository not found":
+- Verifique se o repositorio existe em GitHub
+- Verifique se o usuario esta correto na URL
+
+"Permission denied":
+- Verifique se marcou "repo" ao gerar o token
+- Tente gerar novo token com permissoes corretas
+
+ALTERNATIVA: SEM TOKEN (SSH)
+=============================
+
+Se quiser usar SSH em vez de HTTPS com token:
+1. Gere chave SSH: ssh-keygen -t ed25519
+2. Adicione em https://github.com/settings/keys
+3. Use URL SSH: git@github.com:seu-usuario/discord-panel.git
+
+Mas para comecar, recomendo usar HTTPS + Token (mais facil).
+
+PRONTO!
+=======
+
+Apos completar esses passos, seu codigo estara:
+- ✅ No GitHub (https://github.com/seu-usuario/discord-panel)
+- ✅ Importado no Replit
+- ✅ Online e funcionando!
+
+Qualquer duvida, me chama!

@@ -1,0 +1,108 @@
+APP JA ESTA RODANDO! - COMO ACESSAR
+===================================
+
+STATUS: ✅ ONLINE!
+==================
+
+Seu app Discord Panel JA ESTA RODANDO!
+
+Vejo na tela:
+✅ "The app is running"
+✅ Backend API on port 3001
+✅ Vite frontend on port 5000
+✅ Tela de LOGIN aparecendo
+
+AGORA: ACHAR E CLICAR NA URL
+=============================
+
+PASSO 1: PROCURE A URL
+======================
+
+Olhe para o lado DIREITO da tela do Replit:
+
+OPCAO A: Botao "Preview" com URL
+- Procure por um botao que diz "Preview"
+- Ao lado dele aparece a URL
+- Pode estar na lateral direita
+- Clique nela ou no botao
+
+OPCAO B: Icone de link 🔗
+- Procure por icone de corrente/link
+- Vai ter URL proxima
+- Clique nele
+
+OPCAO C: "Tools & Files" (canto superior direito)
+- Procure por "Tools & Files" (lado direito, cima)
+- Clique em "Preview"
+- Vai mostrar a URL
+
+OPCAO D: URL na barra do navegador
+- Se Preview ja abriu em aba
+- Olhe a barra de endereco do navegador
+- A URL ta la (comeca com https://...repl.co)
+
+COMO EH A URL?
+==============
+
+Sera algo como QUALQUER UM DESSES:
+
+https://discord-panel-ttdev2.repl.co
+https://blue-fish-123.repl.co
+https://happy-dog-456.repl.co
+https://[algo-aleatorio].repl.co
+
+O Replit gera um nome aleatorio.
+
+QUANDO ACHAR A URL:
+===================
+
+1. COPIE a URL completa
+2. ABRA em novo navegador ou aba
+3. COLE e pressione ENTER
+
+RESULTADO:
+==========
+
+Vai aparecer a TELA DE LOGIN:
+
+- Icone de cadeado (🔐)
+- Titulo: "Discord Scanner"
+- Input: "Cole seu token Discord aqui"
+- Botao: "Entrar"
+- Instrucoes de como pegar token
+
+PRONTO! Seu app ta ONLINE! 🎉
+
+SE NAO ACHAR A URL:
+===================
+
+1. Refreshe a pagina do Replit (F5)
+2. Aguarde 2-3 segundos
+3. Procure novamente na lateral direita
+4. Se der erro, procure por mensagens vermelhas no console
+
+SE AINDA ASSIM NAO ACHAR:
+=========================
+
+Tira screenshot mostrando a tela do Replit e me manda!
+Eu ajudo a localizar a URL exata.
+
+DICAS:
+======
+
+- A URL eh fixa (nao muda)
+- Pode bookmarcar
+- Pode enviar para amigos
+- Pode abrir em outro dispositivo
+
+PROXIMO:
+========
+
+1. Acha a URL
+2. Clica/abre em navegador
+3. Pega seu token Discord
+4. Cola no input
+5. Click "Entrar"
+6. Usa teu app!
+
+Consegue achar a URL? Me passa quando encontrar!

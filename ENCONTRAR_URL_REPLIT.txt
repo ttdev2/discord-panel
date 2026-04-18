@@ -1,0 +1,128 @@
+COMO ENCONTRAR A URL DO SEU APP NO REPLIT
+=========================================
+
+Seu app esta online! Mas precisa achar a URL.
+
+METODO 1: ABAS NO TOPO (MAIS FACIL)
+===================================
+
+1. Olhe para o TOPO da tela do Replit
+2. Procure por ABAS (tabs):
+   - "Code" (codigo)
+   - "Console" (logs)
+   - "Preview" ou "Tools"
+
+3. Se VIR "Preview":
+   - Click em "Preview"
+   - Vai mostrar seu app
+   - A URL aparece na barra de endereco
+
+4. Se NAO VIR, procure:
+   - Botao com simbolo 🔗 (link)
+   - Botao "Open in new tab"
+   - Botao com tres pontinhos (...)
+
+METODO 2: LADO DIREITO
+======================
+
+1. Olhe para a LATERAL DIREITA da tela
+2. Procure por:
+   - "Preview"
+   - "Console"
+   - "Tools & Files"
+   - Icone de URL/link
+
+3. Click nele
+4. Vai mostrar a URL do seu app
+
+METODO 3: BOTAO DE PLAY
+=======================
+
+1. Procure por um botao AZUL com:
+   - "Run" ou "Play" (▶)
+   - Ou "View output"
+
+2. Click nele
+3. Vai abrir preview com a URL
+
+METODO 4: CONSOLE (SE TUDO FALHAR)
+==================================
+
+1. Abra Console/Logs
+2. Procure por mensagem tipo:
+   "listening on port 3000"
+   ou
+   "Ready on http://..."
+
+3. Pode conter a URL ou dica de onde eh
+
+COMO EH A URL?
+==============
+
+Sera algo como:
+
+https://blue-fish-123.repl.co
+https://discord-panel-ttdev2.repl.co
+https://hungry-dog-456.repl.co
+https://[algo-aleatorio].repl.co
+
+O Replit gera um nome aleatorio e coloca .repl.co no final.
+
+QUANDO ACHAR:
+=============
+
+1. A URL aparecera em algum lugar da tela
+2. Pode estar em:
+   - Barra de endereco do preview
+   - Campo de texto escrito "URL"
+   - Icone de link com URL
+
+3. CLIQUE NELA ou COPIE
+
+RESULTADO ESPERADO:
+===================
+
+Quando abrir a URL, vai ver:
+
+TELA DE LOGIN (branca ou escura)
+- Input com placeholder "Seu token Discord"
+- Botao "Login"
+
+Se VIU ISSO = Seu app esta funcionando! ✅
+
+DICAS:
+======
+
+- A URL eh fixa (nao muda)
+- Pode bookmarcar para proximo acesso
+- Pode enviar para amigos
+- Pode colocar em bio do Discord
+
+SE MESMO ASSIM NAO ACHAR:
+========================
+
+1. Recarregue o Replit (F5)
+2. Aguarde compilacao terminar (procure por "Ready")
+3. Se der erro em vermelho, screenshot e me manda
+4. Se aparecer "sleeping" ou "starting", aguarde 5-10s
+
+ALTERNATIVA: URL PADRAO
+=======================
+
+Se nada funcionar, tente:
+
+https://discord-panel-ttdev2.repl.co
+
+(Substitua "ttdev2" pelo seu username no Replit)
+
+Se isso nao funcionar, manda screenshot para eu ver!
+
+PRONTO!
+=======
+
+Quando achar a URL:
+1. Clique ou copie
+2. Cole no navegador
+3. Vai aparecer o app
+4. Login com seu token Discord
+5. Comece a usar!

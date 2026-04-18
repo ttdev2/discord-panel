@@ -1,0 +1,55 @@
+COMO FAZER PUSH PARA GITHUB - GUIA RAPIDO
+==========================================
+
+PASSO 1: ACESSAR GITHUB
+=======================
+- Abra: https://github.com/seu-usuario/discord-panel
+- Veja se o repositorio esta listado (deve estar vazio por enquanto)
+
+PASSO 2: OBTER URL DO REPOSITORIO
+==================================
+1. Clique no botao verde "Code" (parte superior da pagina)
+2. Selecione a aba "HTTPS" (deve estar selecionada por padrao)
+3. Clique no icone de copiar (clipboard icon) ao lado da URL
+4. A URL sera copiada, exemplo:
+   https://github.com/seu-usuario/discord-panel.git
+
+PASSO 3: EXECUTAR O SCRIPT PUSH
+================================
+1. Abra PowerShell na pasta do projeto
+2. Execute: .\push-github.ps1
+3. Cole a URL copiada quando solicitado
+4. Aguarde de 1-5 minutos (pode demorar)
+
+PASSO 4: ACOMPANHAR NO GITHUB
+==============================
+- Abra https://github.com/seu-usuario/discord-panel
+- Atualize a pagina (F5)
+- Deve aparecer os arquivos do projeto
+
+PASSO 5: VERIFICAR NO REPLIT
+=============================
+- Se ja estava no Replit, atualize (refresh)
+- Deve aparecer a mensagem "Ready to import"
+- Click em "Import" para comecar
+
+ERROS COMUNS
+============
+
+ERRO: "Authentication failed"
+- Significa que precisa de autenticacao
+- Veja: https://github.com/settings/tokens
+- Gere um "Personal Access Token" com permissao "repo"
+- Use a URL assim: https://seu-usuario:seu-token@github.com/seu-usuario/discord-panel.git
+
+ERRO: "Repository not found"
+- Verifique se a URL esta correta
+- Verifique se o repositorio existe em GitHub
+- Tente copiar a URL novamente
+
+DUVIDAS?
+========
+- Chame o suporte Replit (live chat)
+- Ou tente novamente com a URL correta
+
+PRONTO! Seu codigo esta online!

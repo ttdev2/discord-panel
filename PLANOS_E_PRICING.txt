@@ -1,0 +1,155 @@
+PLANOS E OPCOES DE DEPLOYMENT
+=============================
+
+SEU APP ESTA ONLINE NO REPLIT AGORA!
+====================================
+
+REPLIT FREE (GRATIS) - RECOMENDADO PARA COMECAR
+===============================================
+
+Vantagens:
+✅ GRATIS (0 reais)
+✅ App online 24/7
+✅ Dominio gratis: seu-nome.repl.co
+✅ Sem cartao de credito
+
+Limitacoes:
+❌ "Dorme" se nao acessar por 1 hora
+  (Acorda em 5-10 segundos quando alguem acessa)
+❌ Velocidade media
+❌ Recursos limitados
+
+Ideal para:
+- Teste do app
+- Desenvolvimento
+- Uso ocasional
+- Aprender deployment
+
+COMO FUNCIONA:
+Se seu app nao eh usado por 1 hora, o servidor pausa.
+Quando alguem acessa: acorda automaticamente (5-10 segundos).
+Nada eh perdido, tudo volta ao normal.
+
+---
+
+REPLIT PAID ($7/MES)
+====================
+
+Vantagens:
+✅ SEMPRE ONLINE (24/7, nunca dorme)
+✅ Muito mais rapido
+✅ Mais recursos (RAM, CPU)
+✅ Suporte prioritario
+✅ Ambiente profissional
+
+Desvantagens:
+❌ Pago ($7 USD/mes)
+❌ Precisa cartao de credito
+
+Ideal para:
+- Producao
+- App com muitos usuarios
+- Precisa estar sempre online
+- Bot Discord rodando 24/7
+
+---
+
+ALTERNATIVAS GRATUITAS 24/7
+=============================
+
+1. RAILWAY ($5/MES - RECOMENDADO)
+   - Mais barato que Replit paid
+   - Sempre online
+   - Muito facil de configurar
+   - Bom para comecar pago
+   - Link: railway.app
+
+2. RENDER (FREE + PAGO)
+   - Free tier: dorme como Replit
+   - Pago: $7+/mes
+   - Bom para prodution
+   - Link: render.com
+
+3. FLY.IO (FREE + PAGO)
+   - Free tier pode ficar 24/7
+   - Mais tecnico
+   - Bom para quem gosta de CLI
+   - Link: fly.io
+
+4. HEROKU (PAGO - DESCONTINUADO)
+   - Antes era gratis (nao eh mais)
+   - Agora comeca em $5/mes
+   - Nao recomendo (Railway eh melhor)
+
+---
+
+RECOMENDACAO POR CASO DE USO
+=============================
+
+"Quero testar agora":
+-> REPLIT FREE (current - voce ja esta aqui!)
+
+"Quero usar mas nao tenho grana":
+-> REPLIT FREE (dorminhoco mas funciona)
+
+"Preciso 24/7 e tenho $5/mes":
+-> RAILWAY ($5/mes, facil setup)
+
+"Preciso 24/7 e tenho $7/mes":
+-> REPLIT PAID ($7/mes, sem dormir)
+
+"Quero algo entre":
+-> RENDER FREE (dorme) ou RENDER PAID ($7+/mes)
+
+---
+
+COMO MIGRAR DEPOIS
+===================
+
+Se quiser mudar de Replit para Railway/Render depois:
+
+1. Seu codigo ja esta no GitHub
+2. Railway/Render conectam diretamente no GitHub
+3. Eh so clicar "Import from GitHub"
+4. Vai levar ~10 minutos
+5. URL muda mas funcionalidade eh igual
+
+SUPER FACIL! Nao precisa fazer nada diferente agora.
+
+---
+
+PROXIMO PASSO
+=============
+
+1. Seu app ja esta ONLINE no Replit FREE
+2. Pode usar SEM PAGAR
+3. Teste tudo
+4. Se precisar 24/7, escolha Railway ou Replit Paid depois
+
+Qual eh a URL do seu app?
+(Deve ser algo como: https://bluefish-123.repl.co)
+
+Manda para testar!
+
+---
+
+FAQ
+===
+
+P: Meu app vai sair do ar se eu nao pagar?
+R: Nao! Replit Free continua funcionando, mas dorme se nao usar 1h.
+
+P: Perco dados ao dormir?
+R: Nao. Tudo eh salvo. Apenas o servidor pausa.
+
+P: Preciso fazer algo alem de clicar "Import"?
+R: Nao! Replit configura tudo automaticamente.
+
+P: Posso trocar de Replit para Railway depois?
+R: Sim! Eh super facil. Seu codigo ja esta no GitHub.
+
+P: E se eu deletar no Replit?
+R: Seu codigo continua no GitHub. Pode importar novamente.
+
+P: Qual a melhor opcao?
+R: Se for pagar, Railway ($5/mes) eh mais barato. Se for gratis, Replit Free eh ok.
