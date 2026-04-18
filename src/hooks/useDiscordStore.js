@@ -64,18 +64,22 @@ export const ACTIONS = {
 
 // Reducer
 function discordReducer(state, action) {
+  console.log('[REDUCER DEBUG] Action:', action.type, 'Payload:', action.payload);
+  
   switch (action.type) {
     case ACTIONS.SET_TOKEN:
       return { ...state, token: action.payload, isAuthenticated: !!action.payload };
     case ACTIONS.SET_SESSION_ID:
       return { ...state, sessionId: action.payload };
     case ACTIONS.SET_USER_DATA:
-      return { 
+      const newState = { 
         ...state, 
         userData: action.payload, 
         userId: action.payload?.id,
         isAuthenticated: !!action.payload 
       };
+      console.log('[REDUCER DEBUG] SET_USER_DATA new state:', newState);
+      return newState;
     case ACTIONS.CLEAR_AUTH:
       return {
         ...initialState,
