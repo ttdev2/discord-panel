@@ -114,8 +114,10 @@ function discordReducer(state, action) {
 export function DiscordProvider({ children }) {
   const [state, dispatch] = useReducer(discordReducer, initialState);
 
-  // Memoize context value to prevent unnecessary re-renders
+  // Memoize context value to prevent unnecessary re-renders - CRITICAL FIX
   const value = useMemo(() => ({ state, dispatch }), [state, dispatch]);
+
+  console.log('[CONTEXT] Provider value updated:', { isAuth: state.isAuthenticated, user: state.userData?.username });
 
   return (
     <DiscordContext.Provider value={value}>
