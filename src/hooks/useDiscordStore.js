@@ -64,7 +64,7 @@ export const ACTIONS = {
 
 // Reducer
 function discordReducer(state, action) {
-  console.log('[REDUCER] Action:', action.type, 'Payload:', action.payload?.username || action.payload);
+  console.log('[REDUCER] Action:', action.type, 'Payload exists:', !!action.payload, 'Current isAuth:', state.isAuthenticated);
   
   switch (action.type) {
     case ACTIONS.SET_TOKEN:
@@ -73,13 +73,15 @@ function discordReducer(state, action) {
     case ACTIONS.SET_SESSION_ID:
       return { ...state, sessionId: action.payload };
     case ACTIONS.SET_USER_DATA:
-      console.log('[REDUCER] Setting user data, isAuthenticated will be:', !!action.payload);
-      return { 
+      console.log('[REDUCER] SET_USER_DATA - payload:', action.payload?.username, 'isAuthenticated will be:', !!action.payload);
+      const newState = { 
         ...state, 
         userData: action.payload, 
         userId: action.payload?.id,
         isAuthenticated: !!action.payload 
       };
+      console.log('[REDUCER] New state isAuthenticated:', newState.isAuthenticated);
+      return newState;
     case ACTIONS.CLEAR_AUTH:
       return {
         ...initialState,
