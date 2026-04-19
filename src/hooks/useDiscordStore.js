@@ -64,24 +64,18 @@ export const ACTIONS = {
 
 // Reducer
 function discordReducer(state, action) {
-  console.log('[REDUCER] Action:', action.type, 'Payload exists:', !!action.payload, 'Current isAuth:', state.isAuthenticated);
-  
   switch (action.type) {
     case ACTIONS.SET_TOKEN:
-      console.log('[REDUCER] Setting token, isAuthenticated will be:', !!action.payload);
       return { ...state, token: action.payload, isAuthenticated: !!action.payload };
     case ACTIONS.SET_SESSION_ID:
       return { ...state, sessionId: action.payload };
     case ACTIONS.SET_USER_DATA:
-      console.log('[REDUCER] SET_USER_DATA - payload:', action.payload?.username, 'isAuthenticated will be:', !!action.payload);
-      const newState = { 
+      return { 
         ...state, 
         userData: action.payload, 
         userId: action.payload?.id,
         isAuthenticated: !!action.payload 
       };
-      console.log('[REDUCER] New state isAuthenticated:', newState.isAuthenticated);
-      return newState;
     case ACTIONS.CLEAR_AUTH:
       return {
         ...initialState,
@@ -118,8 +112,6 @@ export function DiscordProvider({ children }) {
 
   // Memoize context value to prevent unnecessary re-renders - CRITICAL FIX
   const value = useMemo(() => ({ state, dispatch }), [state, dispatch]);
-
-  console.log('[CONTEXT] Provider value updated:', { isAuth: state.isAuthenticated, user: state.userData?.username });
 
   return (
     <DiscordContext.Provider value={value}>
