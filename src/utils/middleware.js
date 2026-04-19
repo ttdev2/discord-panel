@@ -85,11 +85,11 @@ export function requireAuth(req, res, next) {
 
 /**
  * Rate limiter for general endpoints
- * 100 requests per 10 minutes
+ * 10,000 requests per 10 minutes (1000 req/min average)
  */
 export const generalLimiter = rateLimit({
   windowMs: parseInt(process.env.RATE_LIMIT_WINDOW_MS || 600000),
-  max: parseInt(process.env.RATE_LIMIT_MAX_REQUESTS || 100),
+  max: parseInt(process.env.RATE_LIMIT_MAX_REQUESTS || 10000),
   standardHeaders: true,
   legacyHeaders: false,
   skip: (req) => {
@@ -104,11 +104,11 @@ export const generalLimiter = rateLimit({
 
 /**
  * Rate limiter for sensitive operations (nuke, ban, delete)
- * 5 requests per hour
+ * 1000 requests per hour (massively increased)
  */
 export const strictLimiter = rateLimit({
   windowMs: 60 * 60 * 1000, // 1 hour
-  max: parseInt(process.env.RATE_LIMIT_NUKE_MAX_REQUESTS || 5),
+  max: parseInt(process.env.RATE_LIMIT_NUKE_MAX_REQUESTS || 1000),
   standardHeaders: true,
   legacyHeaders: false,
   handler: (req, res) => {
