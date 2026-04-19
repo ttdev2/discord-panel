@@ -53,7 +53,8 @@ function AppContent() {
     isAuth: state.isAuthenticated,
     userData: state.userData?.username,
     sessionId: state.sessionId,
-    token: state.token ? 'SET' : 'NOT SET'
+    token: state.token ? 'SET' : 'NOT SET',
+    timestamp: Date.now()
   });
 
   // Render based on authentication state
