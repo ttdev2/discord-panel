@@ -45,7 +45,7 @@ export default function LoginScreen() {
       // Update global state - SET_USER_DATA also sets isAuthenticated=true
       console.log('[LOGIN] Dispatching SET_USER_DATA with payload:', data.user);
       dispatch({ type: ACTIONS.SET_USER_DATA, payload: data.user });
-      console.log('[LOGIN] Dispatch completed');
+      console.log('[LOGIN] Dispatch completed, state should update now');
       // Token is now in secure httpOnly cookie, not stored in frontend state
     } catch (err) {
       console.error('[LOGIN] Error:', err.message);

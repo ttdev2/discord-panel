@@ -22,13 +22,16 @@ function AppContent() {
 
   // Check authentication on mount
   useEffect(() => {
+    console.log('[APP] useEffect triggered - checking session...');
     const checkSession = async () => {
       try {
+        console.log('[APP] Making /api/me request...');
         const res = await fetch('/api/me', {
           method: 'GET',
           credentials: 'include',
         });
 
+        console.log('[APP] /api/me response status:', res.status, 'ok:', res.ok);
         if (res.ok) {
           const userData = await res.json();
           console.log('[APP] Session valid, user:', userData?.username);
